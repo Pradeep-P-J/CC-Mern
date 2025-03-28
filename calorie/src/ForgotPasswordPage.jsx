@@ -23,7 +23,7 @@ const ForgotPasswordPage = () => {
 
     try {
       // Call the backend API that triggers Nodemailer to send the email
-      const response = await fetch('http://localhost:5000/api/forgot-password', {
+      const response = await fetch('https://backend-cc-2j9t.onrender.com/api/forgot-password', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email }),
